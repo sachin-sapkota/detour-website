@@ -100,25 +100,38 @@ const Navbar = () => {
                                                 <i className='las la-times'></i>
                                             </button>
                                         </div>
-                                        <p>
-                                            Find the best spot, restaurant, hotel, fitness center, shop etc.
-                                        </p>
+                                      <div id="menu_espace">
+                                          <ul>
+                                              <li><Link href='/' activeClassName='active'><a className='link style3'>Individuals</a></Link></li>
+                                              <li><Link href='/brokers' activeClassName='active'><a className='link style3'>Brokers</a></Link></li>
+                                              <li><Link href='/pro' activeClassName='active'><a className='link style3'>Enterprise</a></Link></li>
+                                              <li><Link href='/partners' activeClassName='active'><a className='link style3'>Partners</a></Link></li>
+                                          </ul>
+                                      </div>
                                     </div>
                                 </div>
 
                                 <div className='col-lg-5'>
                                     <div className='header-top-right'>
-                                        <Link href='/log-in'>
+                                       <Link href='/about-us' activeClassName='active'>
                                             <a className='link style3'>
-                                                <i className='ri-user-line'></i>Sign In
+                                                About us
                                             </a>
                                         </Link>
-
+                                        <Link href='/press' activeClassName='active'>
+                                            <a className='link style3'>
+                                                Press
+                                            </a>
+                                        </Link>
+                                   
+                                        
+                                
                                         <div
                                             onClick={() => toggleCategory()}
                                             className={open ? 'nice-select open' : 'nice-select'}
                                         >
-                                            <span className='current'>{name}</span>
+                                            
+                                            <span className='current'><img src="//parisinternationalcare.fr/wp-content/plugins/gtranslate/flags/24/en.png" height="24" width="24" alt="en"/> {name} </span>
                                             <ul className='list'>
                                                 {category.length > 0 &&
                                                 category.map((cat, index) => (
@@ -137,42 +150,11 @@ const Navbar = () => {
                                                 ))}
                                             </ul>
                                         </div>
-
-                                        <div
-                                            onClick={() => toggleCurrency()}
-                                            className={
-                                                openCurrency ? 'nice-select open' : 'nice-select'
-                                            }
-                                        >
-                                            <span className='current'>{currencyName}</span>
-                                            <ul className='list'>
-                                                {currency.length > 0 &&
-                                                currency.map((cur, index) => (
-                                                    <li
-                                                        key={index}
-                                                        onClick={(e) =>
-                                                            toggleSelectedCurrency(cur, index)
-                                                        }
-                                                        onChange={(e) => e}
-                                                        className={
-                                                            clicked === index
-                                                            ? 'option selected focus'
-                                                            : 'option'
-                                                        }
-                                                    >
-                                                        {cur}
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-
-                                        <div className='shopcart md-none' onClick={toggleTopCart}>
-                                            <button type='button'>
-                                                <i className='ri-shopping-cart-line'></i>
-                                                <span className='item-amt'>1</span>
-                                            </button>
-                                            <span className='cart-total'>$0.00</span>
-                                        </div>
+                                        <Link href='/log-in'>
+                                            <a className='link style3'>
+                                                <i className='ri-user-line'></i>Sign In
+                                            </a>
+                                        </Link>
 
                                         <div className='contact-box xl-none'>
                                             <span className='ri-phone-line'></span>
@@ -197,7 +179,7 @@ const Navbar = () => {
                     <div className='header-bottom'>
                         <div className='container-fluid'>
                             <div className='row align-items-center'>
-                                <div className='col-lg-2 col-md-3 col-5'>
+                                <div className='col-lg-1 col-md-3 col-5'>
                                     <div className='logo v2'>
                                         <Link href='/'>
                                             <a>
@@ -207,7 +189,7 @@ const Navbar = () => {
                                     </div>
                                 </div>
 
-                                <div className='col-lg-7 col-md-9 col-7 order-lg-1 order-md-2 order-2'>
+                                <div className='col-lg-8 col-md-9 col-7 order-lg-1 order-md-2 order-2'>
                                     <div
                                         className={
                                         displayMobileMenu
@@ -223,54 +205,15 @@ const Navbar = () => {
 
                                         <div id='menu'>
                                             <ul className='main-menu'>
-                                                <li className='has-children'>
-                                                    <a href='#'>Home</a>
-                                                    <span className='menu-expand'>
-                                                        <i className='las la-angle-down'></i>
-                                                    </span>
-                                                    <ul className='sub-menu'>
-                                                        <li>
-                                                            <Link href='/' activeClassName='active'>
-                                                                <a>Home</a>
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link href='/index-2' activeClassName='active'>
-                                                                <a>Home Two</a>
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link href='/index-3' activeClassName='active'>
-                                                                <a>Home Three</a>
-                                                            </Link>
-                                                        </li>
-                                                    </ul>
+                                                <li>
+                                                    <a href='/' activeClassName='active'> <i className='las la-home'></i></a>
                                                 </li>
 
-                                                <li className='has-children'>
-                                                    <a href='#'>Tours</a>
-                                                    <span className='menu-expand'>
-                                                        <i className='las la-angle-down'></i>
-                                                    </span>
-                                                    <ul className='sub-menu'>
-                                                        <li>
-                                                            <Link href='/tours' activeClassName='active'>
-                                                                <a>Tours</a>
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link
-                                                                href='/tour-details'
-                                                                activeClassName='active'
-                                                            >
-                                                                <a>Tour Details</a>
-                                                            </Link>
-                                                        </li>
-                                                    </ul>
+                                                <li>
+                                                    <a href='/patient-care' activeClassName='active'>PATIENT CARE</a>        
                                                 </li>
-
                                                 <li className='has-children'>
-                                                    <a href='#'>Destination</a>
+                                                    <a href='#'>SERVICE +</a>
                                                     <span className='menu-expand'>
                                                         <i className='las la-angle-down'></i>
                                                     </span>
@@ -295,7 +238,7 @@ const Navbar = () => {
                                                 </li>
 
                                                 <li className='has-children'>
-                                                    <a href='#'>Shop</a>
+                                                    <a href='#'>TREATMENTS</a>
                                                     <span className='menu-expand'>
                                                         <i className='las la-angle-down'></i>
                                                     </span>
@@ -400,82 +343,12 @@ const Navbar = () => {
                                                     </ul>
                                                 </li>
 
-                                                <li className='has-children'>
-                                                    <a href='#'>Blog</a>
-                                                    <span className='menu-expand'>
-                                                        <i className='las la-angle-down'></i>
-                                                    </span>
-                                                    <ul className='sub-menu'>
-                                                        <li className='has-children'>
-                                                            <a href='#'>Blog Layout</a>
-                                                            <span className='menu-expand'>
-                                                                <i className='las la-angle-down'></i>
-                                                            </span>
-                                                            <ul className='sub-menu'>
-                                                                <li>
-                                                                    <Link
-                                                                        href='/blog-left-sidebar'
-                                                                        activeClassName='active'
-                                                                    >
-                                                                        <a>Blog Left Sidebar</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link
-                                                                        href='/blog-right-sidebar'
-                                                                        activeClassName='active'
-                                                                    >
-                                                                        <a>Blog Right Sidebar</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link
-                                                                        href='/blog-no-sidebar'
-                                                                        activeClassName='active'
-                                                                    >
-                                                                        <a>Blog No Sidebar</a>
-                                                                    </Link>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-
-                                                        <li className='has-children'>
-                                                            <a href='#'>Blog Details</a>
-                                                            <span className='menu-expand'>
-                                                                <i className='las la-angle-down'></i>
-                                                            </span>
-                                                            <ul className='sub-menu'>
-                                                                <li>
-                                                                    <Link
-                                                                        href='/blog-details-left-sidebar'
-                                                                        activeClassName='active'
-                                                                    >
-                                                                        <a>Blog Details Left Sidebar</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link
-                                                                        href='/blog-details-right-sidebar'
-                                                                        activeClassName='active'
-                                                                    >
-                                                                        <a>Blog Details Right Sidebar</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link
-                                                                        href='/blog-details-no-sidebar'
-                                                                        activeClassName='active'
-                                                                    >
-                                                                        <a>Blog Details No Sidebar</a>
-                                                                    </Link>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
+                                                <li>
+                                                    <a href='/testimonial'>TESTIMONIALS</a>
                                                 </li>
 
                                                 <li className='has-children'>
-                                                    <a>Pages</a>
+                                                    <a>PERSONALISED SERVICES</a>
                                                     <span className='menu-expand'>
                                                         <i className='las la-angle-down'></i>
                                                     </span>
@@ -540,11 +413,7 @@ const Navbar = () => {
                                                     </ul>
                                                 </li>
 
-                                                <li>
-                                                    <Link href='/contact-us' activeClassName='active'>
-                                                        <a>Contact Us</a>
-                                                    </Link>
-                                                </li>
+                                    
                                             </ul>
                                         </div>
                                     </div>
@@ -583,11 +452,7 @@ const Navbar = () => {
                                 <div className='col-lg-3 col-md-6 order-lg-2 order-md-1 md-none'>
                                     <div className='header-bottom-right'>
                                         <div className='contact-box'>
-                                            <span className='ri-phone-line'></span>
-                                            <p>
-                                                Contact Now <br />
-                                                <a href='tel:+15143214567'>+1 (514) 321-4567</a>
-                                            </p>
+                                        <a class="btn v3" href="/get-quote/">GET A QUOTE <i class="ri-logout-circle-r-line"></i></a>
                                         </div>
                                         <div className='sidebar-menu' onClick={toggleContact}>
                                             <span className='ri-menu-3-line'></span>

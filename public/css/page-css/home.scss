@@ -14,11 +14,10 @@
     position: relative;
     background: var(--clr_heath);
     padding: 250px 0;
-    background-image: url(/images/banner1.jpg);
+    background-image: url(/images/banner1.png);
     background-size: cover;
     background-position: center center;
     &::before {
-      background-color: #000;
       content: '';
       position: absolute;
       width: 100%;
