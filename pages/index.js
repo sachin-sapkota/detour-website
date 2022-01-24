@@ -6,6 +6,8 @@ import AdventureTour from '../components/HomeOne/AdventureTour';
 import BestTour from '../components/HomeOne/BestTour';
 import RecommendTour from '../components/HomeOne/RecommendTour';
 import Service from '../components/HomeOne/Service';
+import Quote from '../components/HomeOne/Quote';
+import Expertise from '../components/HomeOne/Expertise';
 import FeatureTour from '../components/HomeOne/FeatureTour';
 import About from '../components/HomeOne/About';
 import Product from '../components/common/Product';
@@ -17,7 +19,18 @@ const index = () => {
     <>
       <Banner />
 
+      <Quote
+        imgOne='/images/service/service-1.png'
+        imgTwo='/images/service/service-2.png'
+        imgThree='/images/service/service-3.png'
+        imgFour='/images/service/service-4.png'
+      />
+
+      <Expertise />
+
       <Promo />
+
+      <RecommendTour />
 
       <SingleTour />
 
@@ -26,8 +39,6 @@ const index = () => {
       </div>
 
       <BestTour />
-
-      <RecommendTour />
 
       <Service
         imgOne='/images/service/service-1.png'

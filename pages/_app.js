@@ -15,6 +15,7 @@ import '../public/css/page-css/header.css';
 import '../public/css/page-css/footer.css';
 import '../public/css/page-css/home.css';
 import '../public/css/page-css/responsive.css';
+import '../public/css/page-css/custom.css';
 
 import Layout from '../components/Layout/Layout';
 import Loader from '../components/Shared/Loader';

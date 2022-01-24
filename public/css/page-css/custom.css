@@ -1,0 +1,14 @@
+.service-item.style1 .service-img {
+    border: none;
+    margin: 0;
+}
+.service-item .service-img img {
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+.service-item.style1 .service-info h4 {
+    font-size: 30px;
+}
+.service-item .service-info p {
+    color: gray;
+}
