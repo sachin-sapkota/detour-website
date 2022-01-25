@@ -9,6 +9,7 @@ import Service from '../components/HomeOne/Service';
 import Quote from '../components/HomeOne/Quote';
 import Expertise from '../components/HomeOne/Expertise';
 import Partner from '../components/HomeOne/Partner';
+import Destination from '../components/HomeOne/Destination';
 import FeatureTour from '../components/HomeOne/FeatureTour';
 import About from '../components/HomeOne/About';
 import Product from '../components/common/Product';
@@ -35,6 +36,14 @@ const index = () => {
         partner3='/images/team/team-3.jpg'
         partner4='/images/team/team-4.jpg'
         partner5='/images/team/team-5.jpg'
+      />
+
+      <Destination
+        des1='india'
+        des2='germany'
+        des3='thailand'
+        des4='malaysia'
+        des5='canada'
       />
 
       <Promo />
