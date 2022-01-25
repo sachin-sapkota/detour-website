@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import $ from "jquery";
 import Link from "../../utils/ActiveLink";
 
 const Navbar = () => {
@@ -37,7 +38,7 @@ const Navbar = () => {
   //set language
   const [open, setOpen] = useState(false);
   const [clicked, setClicked] = useState(false);
-  const [name, setName] = useState("English");
+  const [name, setName] = useState({ code: "en", text: "English" });
 
   //set currency
   const [openCurrency, setOpenCurrency] = useState(false);
@@ -53,17 +54,18 @@ const Navbar = () => {
     setOpen(!open);
   };
   const category = [
-    "English",
-    "French",
-    "Arabic",
-    "Russian",
-    "German",
-    "Spanish",
-    "Chinese",
+    { code: "en", text: "English" },
+    { code: "fr", text: "French" },
+    { code: "ar", text: "Arabic" },
+    { code: "ru", text: "Russian" },
+    { code: "de", text: "German" },
+    { code: "es", text: "Spanish" },
+    { code: "zh-CN", text: "Chinese" },
   ];
 
   // Toggle function for select language
   const toggleSelected = (cat, index) => {
+    translateLanguage(cat.text);
     if (clicked === index) {
       return setClicked(null);
     }
@@ -98,21 +100,31 @@ const Navbar = () => {
   }, []);
 
   // Initialization for Google Translator
-
   const googleTranslateElementInit = () => {
     new window.google.translate.TranslateElement(
       {
         pageLanguage: "en",
         includedLanguages: "en,fr,ar,ru,de,es,zh-CN", // include this for selected languages
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false,
       },
       "google_translate_element"
     );
   };
 
+  // function to go translation
+  function translateLanguage(lang) {
+    const frame = $(".goog-te-menu-frame:first");
+    const language = frame
+      .contents()
+      .find(".goog-te-menu2-item span.text:contains(" + lang + ")")
+      .get(0);
+    if (language) language.click();
+  }
+
   return (
     <>
-      <div id="google_translate_element"></div>
+      <div id="google_translate_element" style={{ display: "none" }}></div>
       <div className="page-wrapper">
         <div className={display ? "body_overlay open" : "body_overlay"}></div>
         {/* Top Header */}
@@ -175,12 +187,12 @@ const Navbar = () => {
                     >
                       <span className="current">
                         <img
-                          src="//parisinternationalcare.fr/wp-content/plugins/gtranslate/flags/24/en.png"
+                          src={`//parisinternationalcare.fr/wp-content/plugins/gtranslate/flags/24/${name.code}.png`}
                           height="24"
                           width="24"
                           alt="en"
                         />{" "}
-                        {name}
+                        {name.text}
                       </span>
                       <ul className="list">
                         {category.length > 0 &&
@@ -195,7 +207,7 @@ const Navbar = () => {
                                   : "option"
                               }
                             >
-                              {cat}
+                              {cat.text}
                             </li>
                           ))}
                       </ul>
