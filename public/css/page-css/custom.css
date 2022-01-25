@@ -31,3 +31,6 @@
 .cbottom-50 {
     bottom: 50px;
 }
+.tour-slider-v3-pagination .swiper-pagination-bullet:after {
+    display: none;
+}

@@ -4,16 +4,8 @@ import Link from 'next/link';
 const Blog = () => {
   return (
     <>
-      <section className='blog-wrap pt-100 pb-70'>
+      <section className='blog-wrap pt-0 pb-0'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-md-12'>
-              <div className='section-title style1 text-center mb-40'>
-                <span>Blogs</span>
-                <h2>Latest News And Updates</h2>
-              </div>
-            </div>
-          </div>
           <div className='row justify-content-md-center'>
             <div className='col-lg-4 col-md-6'>
               <div className='blog-card style1'>

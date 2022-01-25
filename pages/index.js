@@ -1,20 +1,12 @@
 import React from 'react';
 import Banner from '../components/HomeOne/Banner';
-import SingleTour from '../components/HomeOne/SingleTour';
-import Promo from '../components/HomeOne/Promo';
-import AdventureTour from '../components/HomeOne/AdventureTour';
-import BestTour from '../components/HomeOne/BestTour';
 import RecommendTour from '../components/HomeOne/RecommendTour';
-import Service from '../components/HomeOne/Service';
 import Quote from '../components/HomeOne/Quote';
 import Expertise from '../components/HomeOne/Expertise';
 import Partner from '../components/HomeOne/Partner';
 import Destination from '../components/HomeOne/Destination';
 import Specialties from '../components/HomeOne/Specialties';
-import FeatureTour from '../components/HomeOne/FeatureTour';
-import About from '../components/HomeOne/About';
-import Product from '../components/common/Product';
-import Newsletter from '../components/common/Newsletter';
+import AdventureTour from '../components/HomeOne/AdventureTour';
 import Blog from '../components/HomeOne/Blog';
 
 const index = () => {
@@ -54,7 +46,10 @@ const index = () => {
         spec4='/images/team/team-4.jpg'
         spec5='/images/team/team-5.jpg'
       />
-
+      
+      <div className="pt-100">
+        <AdventureTour />
+      </div>
 
     </>
   );
