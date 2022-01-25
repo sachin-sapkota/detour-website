@@ -2,17 +2,19 @@ import React from 'react';
 import Banner from '../components/HomeOne/Banner';
 import RecommendTour from '../components/HomeOne/RecommendTour';
 import Quote from '../components/HomeOne/Quote';
+import Orientation from '../components/HomeOne/Orientation';
 import Expertise from '../components/HomeOne/Expertise';
 import Partner from '../components/HomeOne/Partner';
 import Destination from '../components/HomeOne/Destination';
 import Specialties from '../components/HomeOne/Specialties';
 import AdventureTour from '../components/HomeOne/AdventureTour';
-import Blog from '../components/HomeOne/Blog';
 
 const index = () => {
   return (
     <>
       <Banner />
+
+      <Orientation />
 
       <Quote
         imgOne='/images/service/service-1.png'

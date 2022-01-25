@@ -16,6 +16,9 @@
 .service-item .service-info a:hover {
     color: #78d2ff;
 }
+.service-item .service-info .get-started:hover {
+    color: white;
+}
 .cbottom-10 {
     bottom: 10px;
 }
