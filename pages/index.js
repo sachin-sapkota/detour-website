@@ -10,6 +10,7 @@ import Quote from '../components/HomeOne/Quote';
 import Expertise from '../components/HomeOne/Expertise';
 import Partner from '../components/HomeOne/Partner';
 import Destination from '../components/HomeOne/Destination';
+import Specialties from '../components/HomeOne/Specialties';
 import FeatureTour from '../components/HomeOne/FeatureTour';
 import About from '../components/HomeOne/About';
 import Product from '../components/common/Product';
@@ -38,6 +39,8 @@ const index = () => {
         partner5='/images/team/team-5.jpg'
       />
 
+      <RecommendTour />
+
       <Destination
         des1='india'
         des2='germany'
@@ -46,34 +49,15 @@ const index = () => {
         des5='canada'
       />
 
-      <Promo />
-
-      <RecommendTour />
-
-      <SingleTour />
-
-      <div className="pt-100">
-        <AdventureTour />
-      </div>
-
-      <BestTour />
-
-      <Service
-        imgOne='/images/service/service-1.png'
-        imgTwo='/images/service/service-2.png'
-        imgThree='/images/service/service-3.png'
-        imgFour='/images/service/service-4.png'
+      <Specialties 
+        spec1='/images/team/team-1.jpg'
+        spec2='/images/team/team-2.jpg'
+        spec3='/images/team/team-3.jpg'
+        spec4='/images/team/team-4.jpg'
+        spec5='/images/team/team-5.jpg'
       />
 
-      <FeatureTour />
 
-      <About />
-
-      <Product />
-
-      <Newsletter inputStyle="style1" />
-
-      <Blog/>
     </>
   );
 };

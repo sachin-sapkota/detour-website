@@ -12,6 +12,9 @@
 .service-item .service-info p {
     color: gray;
 }
+.service-item .service-info a:hover {
+    color: #78d2ff;
+}
 .cbottom-10 {
     bottom: 10px;
 }

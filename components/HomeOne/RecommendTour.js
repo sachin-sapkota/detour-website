@@ -10,7 +10,7 @@ const RecommendTour = () => {
             <div className='col-md-12'>
               <div className='section-title text-center style2 mb-40'>
                 <span>Our All</span>
-                <h2>Recommended Destinations</h2>
+                <h2>Easy Access to Options Around the World</h2>
               </div>
             </div>
           </div>
@@ -22,7 +22,7 @@ const RecommendTour = () => {
                   <div className='recommend-tour-info'>
                     <h4>
                     <Link href='/destination'>
-                      <a>Australia</a>
+                      <a>Canada</a>
                       </Link>
                     </h4>
                     <p>27+ Place</p>
@@ -38,7 +38,7 @@ const RecommendTour = () => {
                   <div className='recommend-tour-info'>
                     <h4>
                     <Link href='/destination'>
-                      <a>Newzealand</a>
+                      <a>Thailand</a>
                       </Link>
                     </h4>
                     <p>15+ Place</p>
@@ -54,7 +54,7 @@ const RecommendTour = () => {
                   <div className='recommend-tour-info'>
                     <h4>
                     <Link href='/destination'>
-                      <a >Egypt</a>
+                      <a >India</a>
                       </Link>
                     </h4>
                     <p>20+ Place</p>
@@ -70,7 +70,7 @@ const RecommendTour = () => {
                   <div className='recommend-tour-info'>
                     <h4>
                     <Link href='/destination'>
-                      <a>Africa</a>
+                      <a>Germany</a>
                       </Link>
                     </h4>
                     <p>27+ Place</p>
@@ -82,6 +82,15 @@ const RecommendTour = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className='row mt-100'>
+            <div className='col-12 text-center'>
+            <Link href='/tours'>
+              <a className='btn v3'>
+                VIEW ALL DESTINATIONS
+              </a>
+              </Link>
             </div>
           </div>
         </div>
