@@ -8,6 +8,7 @@ import RecommendTour from '../components/HomeOne/RecommendTour';
 import Service from '../components/HomeOne/Service';
 import Quote from '../components/HomeOne/Quote';
 import Expertise from '../components/HomeOne/Expertise';
+import Partner from '../components/HomeOne/Partner';
 import FeatureTour from '../components/HomeOne/FeatureTour';
 import About from '../components/HomeOne/About';
 import Product from '../components/common/Product';
@@ -27,6 +28,14 @@ const index = () => {
       />
 
       <Expertise />
+
+      <Partner
+        partner1='/images/team/team-1.jpg'
+        partner2='/images/team/team-2.jpg'
+        partner3='/images/team/team-3.jpg'
+        partner4='/images/team/team-4.jpg'
+        partner5='/images/team/team-5.jpg'
+      />
 
       <Promo />
 

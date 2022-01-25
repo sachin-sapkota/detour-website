@@ -31,7 +31,7 @@ const Banner = () => {
                   Everywhere, Anytime for Everyone
                 </h4>
                 <div class="hero__btn-block">
-                  //PROBLEM 
+                  {/* //PROBLEM  */}
                   <a href="/get-quote" className="btn v3">
                     <span>Get a quote </span>{" "}
                     <i class="ri-logout-circle-r-line"></i>
