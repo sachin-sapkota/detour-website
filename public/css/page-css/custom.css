@@ -3,8 +3,9 @@
     margin: 0;
 }
 .service-item .service-img img {
-    border: 1px solid gray;
-    border-radius: 50%;
+    /*border: 1px solid gray;*/
+    /*border-radius: 50%;*/
+    max-height: 70px;
 }
 .service-item.style1 .service-info h4 {
     font-size: 30px;

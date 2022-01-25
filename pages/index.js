@@ -32,16 +32,14 @@ const index = () => {
       <Expertise />
 
       <Partner
-        partner1='/images/team/team-1.jpg'
-        partner2='/images/team/team-2.jpg'
-        partner3='/images/team/team-3.jpg'
-        partner4='/images/team/team-4.jpg'
-        partner5='/images/team/team-5.jpg'
+        partner1='/images/partners/partners-1.png'
+        partner2='/images/partners/partners-2.png'
+        partner3='/images/partners/partners-3.jpeg'
+        partner4='/images/partners/partners-4.png'
+        partner5='/images/partners/partners-5.png'
       />
 
-      <RecommendTour />
-
-      <Destination
+      <RecommendTour
         des1='india'
         des2='germany'
         des3='thailand'
