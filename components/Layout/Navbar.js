@@ -124,7 +124,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div id="google_translate_element"></div>
+      <div id="google_translate_element" style={{ display: "none" }}></div>
       <div className="page-wrapper">
         <div className={display ? "body_overlay open" : "body_overlay"}></div>
         {/* Top Header */}
@@ -187,11 +187,11 @@ const Navbar = () => {
                     >
                       <span className="current">
                         <img
-                          src={'//parisinternationalcare.fr/wp-content/plugins/gtranslate/flags/24/'+name.code+'.png'}
+                          src={`//parisinternationalcare.fr/wp-content/plugins/gtranslate/flags/24/${name.code}.png`}
                           height="24"
                           width="24"
                           alt="en"
-                        />
+                        />{" "}
                         {name.text}
                       </span>
                       <ul className="list">
@@ -207,7 +207,7 @@ const Navbar = () => {
                                   : "option"
                               }
                             >
-                              {cat}
+                              {cat.text}
                             </li>
                           ))}
                       </ul>
