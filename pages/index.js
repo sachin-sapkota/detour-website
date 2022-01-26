@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../components/HomeOne/Banner';
 import RecommendTour from '../components/HomeOne/RecommendTour';
 import Quote from '../components/HomeOne/Quote';
-import Orientation from '../components/HomeOne/Orientation';
+import AboutVideo from '../components/HomeOne/AboutVideo';
 import Expertise from '../components/HomeOne/Expertise';
 import Partner from '../components/HomeOne/Partner';
 import Destination from '../components/HomeOne/Destination';
@@ -15,7 +15,7 @@ const index = () => {
     <>
       <Banner />
 
-      <Orientation />
+      <AboutVideo />
 
       <Quote
         imgOne="/images/service/service-1.png"

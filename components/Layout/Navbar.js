@@ -112,19 +112,10 @@ const Navbar = () => {
     );
   };
 
-  // function to go translation
-  function translateLanguage(lang) {
-    const frame = $(".goog-te-menu-frame:first");
-    const language = frame
-      .contents()
-      .find(".goog-te-menu2-item span.text:contains(" + lang + ")")
-      .get(0);
-    if (language) language.click();
-  }
+
 
   return (
     <>
-      <div id="google_translate_element" style={{ display: "none" }}></div>
       <div className="page-wrapper">
         <div className={display ? "body_overlay open" : "body_overlay"}></div>
         {/* Top Header */}
@@ -180,38 +171,8 @@ const Navbar = () => {
                     <Link href="/press" activeClassName="active">
                       <a className="link style3">Press</a>
                     </Link>
+                    <div id="google_translate_element" style={{ display: "" }}></div>
 
-                    <div
-                      onClick={() => toggleCategory()}
-                      className={open ? "nice-select open" : "nice-select"}
-                    >
-                      <span className="current">
-                        <img
-                          src={`//parisinternationalcare.fr/wp-content/plugins/gtranslate/flags/24/${name.code}.png`}
-                          height="24"
-                          width="24"
-                          alt="en"
-                        />{" "}
-                        {name.text}
-                      </span>
-                      <ul className="list">
-                        {category.length > 0 &&
-                          category.map((cat, index) => (
-                            <li
-                              key={index}
-                              onClick={(e) => toggleSelected(cat, index)}
-                              onChange={(e) => e}
-                              className={
-                                clicked === index
-                                  ? "option selected focus"
-                                  : "option"
-                              }
-                            >
-                              {cat.text}
-                            </li>
-                          ))}
-                      </ul>
-                    </div>
                     <Link href="/log-in">
                       <a className="link style3">
                         <i className="ri-user-line"></i>Sign In

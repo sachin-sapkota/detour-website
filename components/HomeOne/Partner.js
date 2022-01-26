@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Partners = ({ partner1, partner2, partner3, partner4, partner5 }) => {
   return (
     <>
-      <section className='service-wrap pt-100'>
+      <section className='service-wrap pt-40'>
         <div className='container'>
           <div className='row mb-40 align-items-end'>
             <div className='col-md-12'>

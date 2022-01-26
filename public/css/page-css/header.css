@@ -72,6 +72,7 @@
   color: var(--clr_white);
   top: -2px;
   margin-left:20px;
+  margin-right: 20px;
 }
 
 .header-wrap .header-top .header-top-right .link i {
