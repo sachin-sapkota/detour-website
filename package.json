@@ -23,5 +23,18 @@
     "sweetalert2": "^11.1.10",
     "sweetalert2-react-content": "^4.2.0",
     "swiper": "^6.8.4"
-  }
+  },
+  "main": "next.config.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachin-sapkota/detour-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachin-sapkota/detour-website/issues"
+  },
+  "homepage": "https://github.com/sachin-sapkota/detour-website#readme",
+  "description": ""
 }
